@@ -1,5 +1,4 @@
-
-body{
+body {
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 50px;
@@ -13,6 +12,7 @@ input {
 button {
   padding: 10px 15px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 ul {
@@ -25,4 +25,22 @@ li {
   padding: 10px;
   border-bottom: 1px solid #ccc;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button.delete-btn {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 3px 6px;
+  border-radius: 3px;
 }
