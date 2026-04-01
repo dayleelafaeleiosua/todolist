@@ -16,6 +16,7 @@ function saveTasks() {
       completed: li.classList.contains("completed")
     });
   });
+   console.log("Saving tasks:", tasksArr); // <-- check this
   localStorage.setItem("tasks", JSON.stringify(tasksArr));
 }
 
